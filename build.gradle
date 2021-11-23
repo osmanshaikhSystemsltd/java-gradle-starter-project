@@ -64,7 +64,7 @@ run {
 task bomGen {
     doLast{
         exec {
-            executable "gradle cyclonedxBom"
+            executable "cyclonedxBom"
         }
     }
 }

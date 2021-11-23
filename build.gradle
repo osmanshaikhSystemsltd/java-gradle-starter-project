@@ -59,3 +59,11 @@ run {
     dependsOn copyNatives
     mainClassName = 'com.mycompany.app.App'
 }
+
+task bomGen {
+    doLast{
+        exec {
+            executable "gradle cyclonedxBom"
+        }
+    }
+}

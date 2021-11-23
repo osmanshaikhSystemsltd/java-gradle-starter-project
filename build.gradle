@@ -60,11 +60,3 @@ run {
     dependsOn copyNatives
     mainClassName = 'com.mycompany.app.App'
 }
-
-task bomGen {
-    doLast{
-        exec {
-            executable "cyclonedxBom"
-        }
-    }
-}
